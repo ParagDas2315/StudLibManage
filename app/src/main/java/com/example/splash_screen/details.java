@@ -23,7 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class details extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     Button add;
-    TextInputLayout user,phone,area;
+    TextInputLayout name,rollno,area;
     String text;
     FirebaseDatabase fb;
     DatabaseReference reference;
@@ -40,8 +40,8 @@ public class details extends AppCompatActivity implements AdapterView.OnItemSele
         spinner.setOnItemSelectedListener(this);
 
         add = findViewById(R.id.adddatabutton);
-        user = findViewById(R.id.username1text);
-        phone = findViewById(R.id.phoneno);
+        name = findViewById(R.id.username1text);
+        rollno = findViewById(R.id.phoneno);
         area = findViewById(R.id.beatarea1);
 
 
@@ -49,9 +49,9 @@ public class details extends AppCompatActivity implements AdapterView.OnItemSele
             @Override
             public void onClick(View v) {
 
-                String user1 = user.getEditText().getText().toString();
-                String p1 = phone.getEditText().getText().toString();
-                String a1 = area.getEditText().getText().toString();
+                String name1 = name.getEditText().getText().toString();
+                String roll = rollno.getEditText().getText().toString();
+                String year = area.getEditText().getText().toString();
                 String sp1 = spinner.getSelectedItem().toString();//value stored in sp1
 
 
@@ -63,33 +63,33 @@ public class details extends AppCompatActivity implements AdapterView.OnItemSele
                     selectedTextView = (TextView) selectedView;
                     selectedTextView.setError("Please select a value");
 
-                    if (!user1.isEmpty()) {
-                        user.setError(null);
-                        user.setErrorEnabled(false);
-                        if (!p1.isEmpty()) {
-                            phone.setError(null);
-                            phone.setErrorEnabled(false);
-                            if (!a1.isEmpty()) {
+                    if (!name1.isEmpty()) {
+                        name.setError(null);
+                        name.setErrorEnabled(false);
+                        if (!roll.isEmpty()) {
+                            rollno.setError(null);
+                            rollno.setErrorEnabled(false);
+                            if (!year.isEmpty()) {
                                 area.setError(null);
                                 area.setErrorEnabled(false);
 
                                 fb = FirebaseDatabase.getInstance();
-                                reference = fb.getReference("policedetails");
+                                reference = fb.getReference("studentdetails");
                                 String sp1_s = spinner.getSelectedItem().toString();
-                                String user1_s = user.getEditText().getText().toString();
-                                String p1_s = phone.getEditText().getText().toString();
-                                String a1_s = area.getEditText().getText().toString();
-                                Storingdata storingdatass = new Storingdata(sp1_s, user1_s, p1_s, a1_s);
-                                reference.child(user1_s).setValue(storingdatass);
-                                Toast.makeText(getApplicationContext(), "Insterted Successfully", Toast.LENGTH_SHORT).show();
+                                String name1_s = name.getEditText().getText().toString();
+                                String roll_s = rollno.getEditText().getText().toString();
+                                String year_s = area.getEditText().getText().toString();
+                                Storingdata storingdatass = new Storingdata(sp1_s, name1_s, roll_s, year_s);
+                                reference.child(name1_s).setValue(storingdatass);
+                                Toast.makeText(getApplicationContext(), "Inserted Successfully", Toast.LENGTH_SHORT).show();
                             } else {
                                 area.setError("Please enter the year");
                             }
                         } else {
-                            phone.setError("Please enter the year");
+                            rollno.setError("Please enter the year");
                         }
                     } else {
-                        user.setError("Please enter the Student's name");
+                        name.setError("Please enter the Student's name");
                     }
                 } else {
                     selectedTextView.setError("Please select a Branch");

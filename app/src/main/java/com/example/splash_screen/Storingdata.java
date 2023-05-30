@@ -2,6 +2,8 @@ package com.example.splash_screen;
 
 public class Storingdata {
 
+    private String rollno;
+
     public String getUsername() {
         return username;
     }
@@ -40,7 +42,7 @@ public class Storingdata {
     {
         this.nameofoffice = nameofoffice;
         this.location = location;
-        this.phone = phone;
+        this.rollno = phone;
         this.incharge = incharge;
     }
 
@@ -72,12 +74,12 @@ public class Storingdata {
 
     String incharge;
 
-    public void loginregister(String username, String password, String designation, String phone)
+    public void loginregister(String username, String password, String department, String rollno)
     {
         this.username = username;
         this.password = password;
-        this.designation = designation;
-        this.phone = phone;
+        this.department = department;
+        this.rollno = rollno;
     }
 
     String criminalname_s;
@@ -241,7 +243,7 @@ public class Storingdata {
         this.disposal_s = disposal_s;
     }
 
-    String designation,name,beatarea;
+    String department,name,year;
     String sp1s;
     String name1s;
     String loc1s;
@@ -310,21 +312,21 @@ public class Storingdata {
 
 
 
-    public Storingdata(String designation, String name, String phone, String beatarea) {
-        this.designation = designation;
+    public Storingdata(String department, String name, String rollno, String year) {
+        this.department = department;
         this.name = name;
-        this.phone = phone;
-        this.beatarea = beatarea;
+        this.rollno = rollno;
+        this.year = year;
     }
 
 
 
-    public String getDesignation() {
-        return designation;
+    public String getDepartment() {
+        return department;
     }
 
-    public void setDesignation(String designation) {
-        this.designation = designation;
+    public void setDepartment(String department) {
+        this.department = department;
     }
 
     public String getName() {
@@ -335,20 +337,20 @@ public class Storingdata {
         this.name = name;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getRollno() {
+        return rollno;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setPhone(String rollno) {
+        this.rollno = rollno;
     }
 
-    public String getBeatarea() {
-        return beatarea;
+    public String getYear() {
+        return year;
     }
 
-    public void setBeatarea(String beatarea) {
-        this.beatarea = beatarea;
+    public void setYear(String year) {
+        this.year = year;
     }
 
     public Storingdata() {
