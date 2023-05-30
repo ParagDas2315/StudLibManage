@@ -38,11 +38,11 @@ public class Storingdata {
         this.disposal_s = disposal_s;
     }
 
-    public void gov(String nameofoffice, String location, String phone, String incharge)
+    public void gov(String nameofoffice, String location, String rollno, String incharge)
     {
         this.nameofoffice = nameofoffice;
         this.location = location;
-        this.rollno = phone;
+        this.rollno = rollno;
         this.incharge = incharge;
     }
 
@@ -80,6 +80,15 @@ public class Storingdata {
         this.password = password;
         this.department = department;
         this.rollno = rollno;
+    }
+
+    public void loginregister1(String username, String password, String department, String phone)
+    {
+        this.username = username;
+        this.password = password;
+        this.department = department;
+        this.rollno = rollno;
+        this.phone = phone;
     }
 
     String criminalname_s;
@@ -337,11 +346,19 @@ public class Storingdata {
         this.name = name;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
     public String getRollno() {
         return rollno;
     }
 
-    public void setPhone(String rollno) {
+    public void setRollno(String rollno) {
         this.rollno = rollno;
     }
 

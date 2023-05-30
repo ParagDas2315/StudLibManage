@@ -10,12 +10,12 @@
     android:orientation="vertical"
     android:padding="20dp"
     android:textAlignment="center"
-    tools:context=".MainActivity">
+    tools:context=".login1">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".MainActivity">
+        tools:context=".login1">
 
         <LinearLayout
             android:id="@+id/welcome_text1"

@@ -75,12 +75,12 @@ public class login extends AppCompatActivity implements AdapterView.OnItemSelect
                                                       String phone_s = phone.getEditText().getText().toString();
 
                                                       Storingdata storingdatass = new Storingdata();
-                                                      storingdatass.loginregister(user_s,password_s,sp1s,phone_s);
+                                                      storingdatass.loginregister1(user_s,password_s,sp1s,phone_s);
                                                       reference.child(user_s).setValue(storingdatass);
 
                                                       Toast.makeText(getApplicationContext(), "Registered Successfully", Toast.LENGTH_SHORT).show();
 
-                                                      Intent numbersIntent = new Intent(login.this, dashboard.class);
+                                                      Intent numbersIntent = new Intent(login.this, login1.class);
                                                       startActivity(numbersIntent);
                                                       finish();
 

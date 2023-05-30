@@ -82,6 +82,9 @@ public class details extends AppCompatActivity implements AdapterView.OnItemSele
                                 Storingdata storingdatass = new Storingdata(sp1_s, name1_s, roll_s, year_s);
                                 reference.child(name1_s).setValue(storingdatass);
                                 Toast.makeText(getApplicationContext(), "Inserted Successfully", Toast.LENGTH_SHORT).show();
+                                Intent numbersIntent = new Intent(details.this, dashboard.class);
+                                startActivity(numbersIntent);
+                                finish();
                             } else {
                                 area.setError("Please enter the year");
                             }
