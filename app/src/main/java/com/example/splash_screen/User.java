@@ -1,6 +1,8 @@
 package com.example.splash_screen;
 
 public class User {
+    public String getbookId;
+    public String getbookName;
     private String eaddress_s;
     private String ename_s;
     private String oaddress_s;
