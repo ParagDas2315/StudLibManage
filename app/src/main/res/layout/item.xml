@@ -17,28 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Book Number :"
-                android:textColor="@color/black"
-                android:textSize="26sp"
-                android:textStyle="bold"/>
-
-            <TextView
-                android:id="@+id/tvbooknum"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp"
-
-                android:text="01"
-                android:textColor="@color/black"
-                android:textSize="26sp"
-                android:textStyle="bold"/>
-
-        </LinearLayout>
+            android:orientation="horizontal"/>
 
         <LinearLayout
             android:layout_width="wrap_content"

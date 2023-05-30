@@ -50,7 +50,7 @@ public class dashboard extends AppCompatActivity {
         r4.setOnClickListener(new View.OnClickListener() {
                                   @Override
                                   public void onClick(View v) {
-                                      Intent numbersIntent = new Intent(dashboard.this, placesworship.class);
+                                      Intent numbersIntent = new Intent(dashboard.this, booklist.class);
                                       startActivity(numbersIntent);
                                   }
 
