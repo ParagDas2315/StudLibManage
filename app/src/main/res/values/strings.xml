@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">E BEAT</string>
+    <string name="action_settings">Settings</string>
+    <string name="educational_ninstitutions">Educational \nInstitutions</string>
+    <string name="places_of_nworship">Places Of \nWorship</string>
+    <string name="bus_stop_taxi_stand_petrol_pump">Bus stop,Taxi Stand,Petrol pump</string>
+    <string name="guest_house_hotels_restaurants">Guest house/Hotels/Restaurants</string>
+    <string name="government_offices">Government Offices</string>
+    <string name="beat_officer_details">Beat Officer Details</string>
+    <string name="beat_area">Beat Area</string>
+    <string name="phone_no">Phone No.</string>
+    <string name="name_and_phone_number_of_beat_officer_s">ENTER THE STUDENT DETAILS\'S</string>
+    <string name="add">Add</string>
+    <string name="location">Location</string>
+    <string name="officer_incharge">Officer Incharge</string>
+    <string name="enter">Enter</string>
+    <string name="particulars_of_schools_colleges_and_hostels">Particulars of Schools, Colleges and Hostels</string>
+    <string name="name_of_the_institution">Name of the Institution</string>
+    <string name="name_of_head_master_principal">Name of Head Master/Principal</string>
+    <string name="phone_number_of_head_master_principal">Phone Number of Head Master/Principal</string>
+    <string name="name_of_office">Name of Office</string>
+
+
+    <string-array name="des">
+        <item>Click to select Department</item>
+        <item>INFORMATION TECHNOLOGY</item>
+        <item>COMPUTER SCIENCE</item>
+        <item>ELECTRONICS AND TELECOMMUNICATION</item>
+        <item>ELECTRICAL AND ELECTRONICS</item>
+        <item>VLSI</item>
+        <item>MECHANICAL</item>
+        <item>CIVIL</item>
+    </string-array>
+
+    <string-array name="inst">
+        <item>Click to select type of institution</item>
+        <item>SCHOOL</item>
+        <item>COLLEGE</item>
+        <item>HOSTEL</item>
+    </string-array>
+
+    <string-array name="choosing">
+        <item>Click to select type</item>
+        <item>Boys</item>
+        <item>Girls</item>
+        <item>Both</item>
+    </string-array>
+
+
+    <string name="people_useful_for_negotiation_kidnapping_hijacking">People useful for negotiation - kidnapping/Hijacking</string>
+    <string name="list_of_bad_characters">List of Bad characters</string>
+    <string name="shop_under_exercise_law_explosives">Shop under exercise law, explosives</string>
+    <string name="list_of_firs_registered">List of FIRs Registered</string>
+    <string name="list_of_criminals">List of Criminals</string>
+    <string name="tourist_guides">Tourist Guides</string>
+    <string name="list_of_dancing_schools">List of Dancing schools</string>
+    <string name="important_restaurants">Important Restaurants</string>
+    <string name="scrap_yard_in_the_beat_date_of_checking">Scrap yard in the Beat, Date of checking</string>
+    <string name="location_of_cctv_cameras">Location of CCTV Cameras</string>
+    <string name="village_panchayat_municipality_list_of_spa_hair_cutting_saloon">Village panchayat, Municipality, List of spa, Hair cutting saloon</string>
+    <string name="house_panchayat_school_bank_visit">House, panchayat, school, bank visit</string>
+    <string name="closed_houses_in_the_beat">Closed houses in the Beat</string>
+    <string name="gadas_and_movable_carts">Gadas and movable Carts</string>
+    <string name="Place" />
+    <string name="place">Place</string>
+    <string name="disposal">Disposal</string>
+    <string name="welcome_to_goa_police_e_beat_app">Welcome to Goa Police E - Beat App</string>
+    <string name="please_enter_the_details_to_login">Please enter the details to login</string>
+    <string name="login">Login</string>
+    <string name="welcome_to_goa_police_e_beat_app1">Welcome to Goa Police E - Beat App</string>
+    <string name="click_here_to_register">Click here to register</string>
+    <string name="address">address</string>
+    <string name="address1">Address</string>
+    <string name="fir_details">FIR Details</string>
+    <string name="name_of_the_criminal">Name of the criminal</string>
+    <string name="list_of_criminals_having_two_or_more_involvement_of_crime">List of Criminals having two or more involvement of Crime</string>
+    <string name="list_of_dancing_schools1">List of Dancing Schools</string>
+    <string name="list_of_tourist_guides">List of Tourist Guides</string>
+    <string name="phone_number_of_the_owner">Phone Number of the Owner</string>
+    <string name="address_of_the_establishment">Address of the Establishment</string>
+    <string name="name_of_the_establishment">Name of the Establishment</string>
+    <string name="name_of_the_tourist_guide">Name of the Tourist Guide</string>
+    <string name="local_address">Local Address</string>
+    <string name="native_address">Native Address</string>
+    <string name="particular_of_government_offices_and_location">Particulars of Government offices and location</string>
+</resources>

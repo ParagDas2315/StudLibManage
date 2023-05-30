@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "952576667411",
+    "project_id": "ebeat12",
+    "storage_bucket": "ebeat12.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952576667411:android:fe0f58f66f16a9794274e6",
+        "android_client_info": {
+          "package_name": "com.example.splash_screen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952576667411-jaefbj6slj5bqptgssqgmpojtvd257ht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9yVThJO1StRZRX5Uau2tbzNUS1qM-Y1w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952576667411-jaefbj6slj5bqptgssqgmpojtvd257ht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

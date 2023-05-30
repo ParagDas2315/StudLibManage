@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:textAlignment="center"
+    tools:context=".education">
+
+    <LinearLayout
+        android:id="@+id/detaillayout123"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_on_primary"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingBottom="20dp"
+        android:textAlignment="center"
+        tools:context=".education">
+
+        <TextView
+            android:id="@+id/schooldetails1"
+            android:layout_width="228dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="@string/particulars_of_schools_colleges_and_hostels"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.028" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:layout_width="331dp"
+            android:layout_height="57dp"
+            android:background="@drawable/textview_border"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_of_the_institution"
+                android:textColor="@color/textcolor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/location"
+                android:textColor="@color/textcolor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="46dp"
+            android:layout_height="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@id/head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_of_head_master_principal"
+                android:textColor="@color/textcolor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@id/phoneno"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="1234567890"
+                android:hint="@string/phone_number_of_head_master_principal"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/choose"
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:layout_width="331dp"
+            android:layout_height="57dp"
+            android:background="@drawable/textview_border" />
+
+
+        <Button
+            android:id="@+id/adddatabutton"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:insetTop="8dp"
+            android:text="@string/add" />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dimg5" type="id" />
+    <item name="text5" type="id" />
+    <item name="dimg6" type="id" />
+    <item name="text6" type="id" />
+    <item name="area" type="id" />
+    <item name="officename" type="id" />
+    <item name="location" type="id" />
+    <item name="officerincharge" type="id" />
+    <item name="crimeno" type="id" />
+</resources>

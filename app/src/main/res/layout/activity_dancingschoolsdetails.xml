@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:textAlignment="center"
+    tools:context=".dancingschoolsdetails">
+
+    <LinearLayout
+        android:id="@+id/detaillayout12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_on_primary"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingBottom="20dp"
+        android:textAlignment="center"
+        tools:context=".dancingschoolsdetails">
+
+        <TextView
+            android:id="@+id/dancingschooltitle"
+            android:layout_width="239dp"
+            android:layout_height="98dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:text="@string/list_of_dancing_schools1"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.028"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@id/nameofestablishment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameofestablishment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name_of_the_establishment"
+                android:textColor="@color/textcolor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="328dp"
+            android:layout_height="4dp"
+            android:ems="10"
+            android:hint="@string/add"
+            android:inputType="text"
+            tools:ignore="LabelFor,DuplicateSpeakableTextCheck"
+            android:autofillHints="" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@id/address"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/address_of_the_establishment"/>
+            <!--                android:inputType="phone" />-->
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@id/ownername"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ownername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Name of the Owner"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@id/phoneno"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="1234567890"
+                android:hint="@string/phone_number_of_the_owner"
+                android:inputType="phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@id/owneraddress"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/owneraddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="Address of the Owner"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/adddatabutton"
+            android:layout_width="146dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:insetTop="8dp"
+            android:text="@string/add" />
+
+
+    </LinearLayout>
+
+</ScrollView>
