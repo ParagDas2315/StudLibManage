@@ -10,12 +10,12 @@
     android:orientation="vertical"
     android:padding="20dp"
     android:textAlignment="center"
-    tools:context=".login1">
+    tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:context=".login1">
+        tools:context=".MainActivity">
 
         <LinearLayout
             android:id="@+id/welcome_text1"
@@ -32,17 +32,18 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="303dp"
-                android:layout_height="141dp"
+                android:layout_height="150dp"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/emblem_of_goa_police" />
+                app:srcCompat="@drawable/libraryvect" />
 
             <TextView
                 android:id="@+id/welcome1"
-                android:layout_width="239dp"
-                android:layout_height="98dp"
+                android:paddingTop="20dp"
+                android:layout_width="400dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:fontFamily="sans-serif"
-                android:text="@string/welcome_to_goa_police_e_beat_app"
+                android:text="Welcome to the College Library Management System"
                 android:textAlignment="center"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/black"
@@ -63,7 +64,7 @@
                 android:layout_width="318dp"
                 android:layout_height="38dp"
                 android:layout_gravity="center"
-                android:text="@string/please_enter_the_details_to_login"
+                android:text="Please Enter Your Credentials"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 app:autoSizeTextType="uniform" />
@@ -83,7 +84,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Username"
-                    android:textColor="@color/textcolor" />
+                    android:textColor="@color/black" />
             </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -93,7 +94,7 @@
                 android:layout_height="60dp"
                 android:hint="Password"
                 app:passwordToggleEnabled="true"
-                app:passwordToggleTint="@color/textcolor">
+                app:passwordToggleTint="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"

@@ -27,7 +27,7 @@
             android:layout_width="303dp"
             android:layout_height="141dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/emblem_of_goa_police" />
+            app:srcCompat="@drawable/libraryvect" />
 
         <TextView
             android:id="@+id/welcome1"
@@ -35,7 +35,7 @@
             android:layout_height="98dp"
             android:layout_gravity="center"
             android:fontFamily="sans-serif"
-            android:text="@string/welcome_to_goa_police_e_beat_app1"
+            android:text="Welcome to college Library Management system"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/black"
@@ -76,7 +76,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Username"
-                android:textColor="@color/textcolor" />
+                android:textColor="@color/black" />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -112,7 +112,7 @@
             android:layout_height="60dp"
             android:hint="Password"
             app:passwordToggleEnabled="true"
-            app:passwordToggleTint="@color/textcolor">
+            app:passwordToggleTint="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
