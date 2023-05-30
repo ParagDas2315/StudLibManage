@@ -6,68 +6,21 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/policeman_color_icon_police_officer_isolated_illustration_vector"
+        android:icon="@drawable/studvec"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/policeman_color_icon_police_officer_isolated_illustration_vector"
+        android:roundIcon="@drawable/studvec"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splash_screen"
         tools:targetApi="31">
-        <activity
-            android:name=".dashboard1"
-            android:exported="false" />
-        <activity
-            android:name=".dancingschoolsview"
-            android:exported="false" />
-        <activity
-            android:name=".touristguidesdetails"
-            android:exported="false" />
-        <activity
-            android:name=".touristguides"
-            android:exported="false" />
-        <activity
-            android:name=".dancingschoolsdetails"
-            android:exported="false" />
-        <activity
-            android:name=".dancingschools"
-            android:exported="false" />
-        <activity
-            android:name=".crime2ormore1"
-            android:exported="false" />
-        <activity
-            android:name=".crime2ormore"
-            android:exported="false" />
-        <activity
-            android:name=".Retrieve"
-            android:exported="false" />
-        <activity
-            android:name=".frilistdetails"
-            android:exported="false" />
-        <activity
-            android:name=".firlist"
-            android:exported="false" />
-        <activity
-            android:name=".education"
-            android:exported="false" />
-        <activity
-            android:name=".govdetails"
-            android:exported="false" />
+
         <activity
             android:name=".details"
-            android:exported="false" />
-        <activity
-            android:name=".guesthotelrest"
-            android:exported="false" />
-        <activity
-            android:name=".bustaxipetrol"
             android:exported="false" />
         <activity
             android:name=".placesworship"
             android:exported="false" />
         <activity
             android:name=".educationalinstitutions"
-            android:exported="false" />
-        <activity
-            android:name=".governoffices"
             android:exported="false" />
         <activity
             android:name=".dashboard"
