@@ -22,7 +22,7 @@
             android:name=".User"
             android:exported="false" />
         <activity
-            android:name=".placesworship"
+            android:name=".studsearch"
             android:exported="false" />
         <activity
             android:name=".educationalinstitutions"

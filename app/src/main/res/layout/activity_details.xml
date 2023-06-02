@@ -6,9 +6,9 @@
     android:id="@+id/welcome_text"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/background"
     android:orientation="vertical"
-    android:padding="20dp"
+    android:padding="1dp"
     android:textAlignment="center"
     tools:context=".details">
 
@@ -16,20 +16,30 @@
         android:id="@+id/detaillayout1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/design_default_color_on_primary"
         android:orientation="vertical"
-        android:padding="20dp"
-        android:paddingBottom="20dp"
+        android:background="@color/background"
+        android:padding="1dp"
+        android:paddingBottom="2dp"
         android:textAlignment="center"
-        tools:context=".login">
+        tools:context=".details">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/officerdetail"
-            android:layout_width="239dp"
+            android:layout_width="308dp"
             android:layout_height="98dp"
             android:layout_gravity="center"
             android:fontFamily="sans-serif"
             android:text="ENTER THE DETAILS OF STUDENT"
+            android:textSize="30sp"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/black"
@@ -45,20 +55,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
         <Spinner
             android:id="@+id/spinner1"
             style="@style/Widget.AppCompat.Spinner.DropDown"
-            android:layout_width="331dp"
+            android:layout_width="409dp"
             android:layout_height="57dp"
-            android:background="@drawable/textview_border" />
+            android:background="@drawable/input"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@id/username1text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -67,6 +77,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Students Name"
+                android:background="@drawable/input"
                 android:textColor="@color/textcolor" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -97,15 +108,11 @@
         <!--    </com.google.android.material.textfield.TextInputLayout>-->
 
 
-        <EditText
-            android:id="@+id/editTextText"
-            android:layout_width="328dp"
-            android:layout_height="7dp"
-            android:ems="10"
-            android:inputType="text" />
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@id/phoneno"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="60dp">
 
@@ -113,13 +120,19 @@
                 android:id="@+id/phoneno"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/input"
                 android:digits="1234567890"
                 android:hint="Roll Number"
+                android:textColor="@color/textcolor"
                 android:inputType="phone" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@id/beatarea1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="60dp">
 
@@ -127,7 +140,7 @@
                 android:id="@+id/beatarea1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:background="@drawable/input"
                 android:hint="Year studying in"
                 android:inputType="text" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -136,9 +149,12 @@
         <Button
             android:id="@+id/adddatabutton"
             android:layout_width="146dp"
-            android:layout_height="wrap_content"
+            android:layout_height="83dp"
             android:layout_gravity="center"
+            android:backgroundTint="@color/teal_200"
+            android:layout_marginTop="15dp"
             android:insetTop="8dp"
+            android:textSize="20sp"
             android:text="@string/add" />
 
 

@@ -1,19 +1,11 @@
 package com.example.splash_screen;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
-
-import  android.content.Intent;
-import android.content.SharedPreferences;
-import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
-import android.view.WindowManager;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class dashboard extends AppCompatActivity {
@@ -39,7 +31,7 @@ public class dashboard extends AppCompatActivity {
         r3.setOnClickListener(new View.OnClickListener() {
                                   @Override
                                   public void onClick(View v) {
-                                      Intent numbersIntent = new Intent(dashboard.this, educationalinstitutions.class);
+                                      Intent numbersIntent = new Intent(dashboard.this, studsearch.class);
                                       startActivity(numbersIntent);
                                   }
 

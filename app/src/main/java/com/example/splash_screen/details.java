@@ -1,20 +1,17 @@
 package com.example.splash_screen;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.util.Log;
-import android.widget.EditText;
-import android.text.TextUtils;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
-
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DatabaseReference;
@@ -80,7 +77,7 @@ public class details extends AppCompatActivity implements AdapterView.OnItemSele
                                 String roll_s = rollno.getEditText().getText().toString();
                                 String year_s = area.getEditText().getText().toString();
                                 Storingdata storingdatass = new Storingdata(sp1_s, name1_s, roll_s, year_s);
-                                reference.child(name1_s).setValue(storingdatass);
+                                reference.child(roll_s).setValue(storingdatass);
                                 Toast.makeText(getApplicationContext(), "Inserted Successfully", Toast.LENGTH_SHORT).show();
                                 Intent numbersIntent = new Intent(details.this, dashboard.class);
                                 startActivity(numbersIntent);
