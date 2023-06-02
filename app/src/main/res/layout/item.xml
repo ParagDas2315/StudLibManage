@@ -34,7 +34,7 @@
                 android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/tvbookid"
+                android:id="@+id/tvbookId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
@@ -60,7 +60,7 @@
                 android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/tvbookname"
+                android:id="@+id/tvbookName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"

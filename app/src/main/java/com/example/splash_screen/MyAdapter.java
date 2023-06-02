@@ -13,12 +13,11 @@ import java.util.ArrayList;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
 
-
     Context context;
 
-    ArrayList<User> list;
+    ArrayList<Book> list;
 
-    public MyAdapter(Context context, ArrayList<User> list) {
+    public MyAdapter(Context context, ArrayList<Book> list) {
         this.context = context;
         this.list = list;
     }
@@ -26,16 +25,16 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(context).inflate(R.layout.item,parent, false);
+        View v = LayoutInflater.from(context).inflate(R.layout.item,parent,false);
         return new MyViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        User user = list.get(position);
-        holder.bookId.setText(user.getbookId);
-        holder.bookName.setText(user.getbookName);
+        Book book = list.get(position);
+        holder.bookId.setText(book.getBookId());
+        holder.bookName.setText(book.getBookName());
     }
 
     @Override
@@ -50,8 +49,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder>{
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            bookName = itemView.findViewById(R.id.tvbookname);
-            bookId = itemView.findViewById(R.id.tvbookid);
+            bookId = itemView.findViewById(R.id.tvbookId);              //tvbookId
+            bookName = itemView.findViewById(R.id.tvbookName);          //tvbookName
         }
     }
 }

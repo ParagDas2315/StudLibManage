@@ -17,10 +17,11 @@ import java.util.ArrayList;
 
 public class booklist extends AppCompatActivity {
 
+
     RecyclerView recyclerView;
     DatabaseReference database;
     MyAdapter myAdapter;
-    ArrayList<User> list;
+    ArrayList<Book> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +29,7 @@ public class booklist extends AppCompatActivity {
         setContentView(R.layout.activity_booklist);
 
         recyclerView = findViewById(R.id.bookList);
-        database = FirebaseDatabase.getInstance().getReference("Bookdetails");
+        database = FirebaseDatabase.getInstance().getReference("BookDetails");
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
@@ -40,10 +41,12 @@ public class booklist extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                for(DataSnapshot dataSnapshot : snapshot.getChildren())
-                {
-                    User user = dataSnapshot.getValue(User.class);
-                    list.add(user);
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()){
+
+                    Book book = dataSnapshot.getValue(Book.class);
+                    list.add(book);
+
+
                 }
                 myAdapter.notifyDataSetChanged();
             }
