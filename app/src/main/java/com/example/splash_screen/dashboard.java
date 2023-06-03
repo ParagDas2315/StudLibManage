@@ -2,10 +2,14 @@ package com.example.splash_screen;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.RelativeLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import org.checkerframework.checker.nullness.qual.NonNull;
 
 
 public class dashboard extends AppCompatActivity {
@@ -48,5 +52,24 @@ public class dashboard extends AppCompatActivity {
 
                               }
         );
+
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu_scrolling,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==R.id.logout)
+        {
+            startActivity(new Intent(dashboard.this, login1.class));
+        }
+
+
+        return super.onOptionsItemSelected(item);
     }
 }
+
